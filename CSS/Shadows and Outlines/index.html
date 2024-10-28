@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shadows and Outlines</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .Box {
+      border: 2px solid black;
+      background: #ffe9d3;
+      margin: 150px ;
+      width: 80%;
+      height: 30px;
+      display: flex;
+      /* display: inline; */
+      justify-content: center;
+      padding: 24px;
+      font-size: 20px;
+      Box-shadow: 8px 4px 8px #52d18f;
+      text-shadow: 2px 2px 3px #6aace5 ;
+      <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+    }
+  </style>
+  <body>
+    <div class="Box">This is a Box</div>
+  </body>
+</html>

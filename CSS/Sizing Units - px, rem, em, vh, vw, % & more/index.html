@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sizing Units </title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+.F{
+    color: aquamarine;
+    background: #8d509e;
+    font-size: medium;
+    border:2px solid black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* min-height: 80vh; */
+    margin: 23px auto;
+    font-size: 18px;
+
+}
+.S{
+    box-sizing: border-box ;
+    color: #063a08;
+    background: #47d4d8;
+    font-size: large;
+    border:2px solid black;
+    font-family:'Times New Roman', Times, serif;
+    margin: auto;
+    min-height: 80vh;
+    margin: 23px auto;
+    font-size: 18px;
+
+}
+.TH{
+    color:bisque;
+    background: #f05c75;
+    font-size: small;
+    border:2px solid black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* min-height: 80vh; */
+    margin: 23px;
+    font-size: 18px;
+
+}
+.S > div{
+            font-size: 2em; 
+            border: 2px solid red;
+            max-width: 50%;
+            margin: 23px auto;
+
+        }
+.S > div> div{ 
+        border: 2px solid black;
+        box-sizing: border-box;
+        margin: 23px auto;
+        color: rgb(0, 0, 0);
+        font-size: 22px;
+        max-width: 50%;
+        /* width: 100vmin; */
+        width: 80vw;
+        }
+</style>
+<body>
+    <div class="F">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vel ad labore quae incidunt ipsa tempora illo, nisi necessitatibus eum, neque aliquid ipsam, veniam doloremque earum alias! Eveniet provident soluta deleniti dolorum illum ut molestias consequuntur dolorem eius id hic est minima explicabo, sequi, ratione architecto consequatur. Accusamus consequatur voluptas sed rerum repudiandae, animi quod vero.
+    </div>
+    <div class="S">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi praesentium esse deserunt, nam impedit voluptates, excepturi neque quos animi accusamus tempore quod, a eius perferendis magni aut? Asperiores fuga tempore perspiciatis laboriosam nobis, vero, harum eius reprehenderit a nulla temporibus labore rerum velit aliquam facere, consequuntur nemo. Iure repudiandae vero cumque, cogit porro consectetur quos quisquam! Officiis excepturi quasi voluptatem ipsa maxime dignissimos beatae a in soluta centium sint. Dolores, iure, minus veniam mollitia cum repudiandae aut, fuga repellendus itaque impedit laboriosam. Quibusdam nihil consequuntur veritatis blanditiis voluptates tempora maxime accusamus earum? Nihil adipisci sapiente vitae possimus qui reprehenderit tenetur? Esse 
+        <div>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore iure alias in eum harum vitae cupiditate minima, sint quam modi quae laudantium magnam neque commodi necessitatibus corporis expedita a consequatur. Doloremque, neque! Architecto vero et perspiciatis, earum quis iste temporibus ratione culpa doloremque obcaecati, minima ipsa beatae corrupti, vitae nisi?
+            <div>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti praesentium maxime deserunt! Expedita optio quaerat sint harum quibusdam, quo facere nostrum tempora. Laudantium, eligendi neque accusamus tempore maiores id quisquam repudiandae? Iusto neque dolor ea maxime a deserunt, doloribus consectetur quas quam beatae nostrum magni consequuntur dolorum voluptates repellendus! Ratione est, corporis, quia, fuga harum eveniet minima iste unde mollitia hic fugit non! Soluta velit molestiae quam.
+            </div>
+        </div>
+    </div>
+    <div class="TH">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius non molestiae, autem iste esse laborum. Possimus libero sit sunt ducimus incidunt. Consequatur repudiandae, sint, vitae blanditiis porro perferendis quisquam soluta, nobis nulla dolore voluptate nihil. A doloribus labore beatae sunt!
+    </div>
+</body>
+</html>
