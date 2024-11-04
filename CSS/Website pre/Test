@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multicolor Website</title>
+    <style>
+      @media screen and (max-width: 600px) {
+        .logo {
+          font-size: 20px;
+          font-weight: 770px;
+          color: rgb(100, 62, 62);
+          display: inline;
+          cursor: pointer;
+          line-height: 20px;
+          font-style: bold;
+          font-family: 'Times New Roman', Times, serif;
+          position: relative;
+          top: 30px;
+          right: 620px;
+        }
+
+        .language-selector select {
+          padding: 5px;
+          font-size: 20px;
+          border-radius: 5px;
+          cursor: pointer;
+          margin-top: 20px;
+          position: relative;
+          top: 10px;
+        }
+
+        .search {
+          border: 1px solid #f4f3ea;
+          height: 30px;
+          padding: 15px;
+          border-radius: 20px 20px 20px 20px;
+          position: relative;
+          bottom: 7.5px;
+        }
+      }
+
+      :root {
+        --color: #ff4343;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        max-width: 100%;
+        overflow-x: hidden; /* Ensures no horizontal scroll */
+      }
+
+      h1 {
+        text-align: center;
+        background: gold;
+        font-style: italic;
+        position: relative;
+      }
+
+      main {
+        height: 10px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .logo {
+        font-size: 45px;
+        font-weight: 770px;
+        color: rgb(100, 62, 62);
+        display: inline;
+        cursor: pointer;
+        line-height: 20px;
+        font-style: bold;
+        font-family: 'Times New Roman', Times, serif;
+        position: relative;
+        top: 30px;
+        margin-right: auto;
+      }
+
+      .language-selector select {
+        padding: 5px;
+        font-size: 20px;
+        border-radius: 15px;
+        background: #010000;
+        color: #f05858;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px;
+        display: inline;
+        text-align: center;
+        position: relative;
+        bottom: 25px;
+        left: 50px;
+      }
+
+      .nav- {
+        background-color: var(--color);
+        color: #f591d7;
+        font-weight: 600;
+        opacity: 90%;
+        font-size: 21.5px;
+        font-family: Geneva;
+        text-align: center;
+        height: 50px;
+        font-style: italic;
+        line-height: 90px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+      }
+
+      .nav- ul {
+        display: contents;
+        list-style-type: none;
+        padding-left: 0px;
+        margin: 0px;
+        text-indent: 18px;
+      }
+
+      .nav- ul li {
+        position: relative;
+        left: 20px;
+        text-indent: 28px;
+      }
+
+      .nav1 {
+        background: #0091ff;
+        color: rgb(0, 0, 0);
+        text-indent: 30px;
+        font-weight: 600;
+        opacity: 90%;
+        font-size: 21.5px;
+        font-family: Geneva;
+        text-align: center;
+        height: 100px;
+        font-style: italic;
+        line-height: 90px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+      }
+
+      .nav1 ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0px;
+        padding-left: 60px;
+        align-items: 20px;
+      }
+
+      .nav1 ul li {
+        display: inline-block;
+        padding: 2px;
+        margin-right: 50px;
+        cursor: pointer;
+      }
+
+      .search {
+        border: 1px solid #f4f3ea;
+        height: 30px;
+        padding: 15px;
+        border-radius: 20px;
+        width: 130px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        text-align: center;
+        box-shadow: 0px 0px 8px 3px #f0d28b;
+        cursor: pointer;
+        position: relative;
+      }
+
+      .block {
+        border: 1px solid gray;
+        height: auto;
+        margin: 10px auto;
+        padding: 10px;
+        line-height: 29px;
+        max-width: 1000px;
+      }
+
+      .point {
+        padding-left: 16px;
+      }
+
+      p {
+        line-height: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      h2 {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .img {
+        margin-left: auto;
+        margin-right: auto;
+        height: 500px;
+        border: 4px solid rgb(11, 10, 10);
+        border-radius: 5%;
+        cursor: pointer;
+        display: block;
+        max-width: 100%;
+      }
+
+      .Theme {
+        background-color: #ff0000a1;
+        color: #ffffff;
+        font-weight: bold;
+        font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: large;
+        left: 640px;
+        bottom: 25px;
+        width: 60px;
+        height: 58px;
+        border-radius: 100%;
+        cursor: pointer;
+        transition: background-color 1.7s ease;
+        border: 6px solid gold;
+        background-color: #ff7300;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <h1>
+        <main>
+          <h3 id="main-heading">"Welcome to Our E-Commerce Store</h3>
+          <p1 id="main-paragraph" style="color: #0091ff;">Please browse our collection of amazing products.</p1>
+        </main>
+        <div class="logo">f⭕⭕d' z</div>
+        <div class="language-selector">
+          <button class="Theme">TC</button>
+          <select id="languageDropdown" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="de">Deutsch</option>
+            <option value="hi">हिन्दी</option>
+          </select>
+        </div>
+      </h1>
+      <div class="nav-">
+        <ul>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="#">Deals</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Wishlist</a></li>
+          <li><a href="#">Cart</a></li>
+          <li><a href="#">Account</a></li>
+          <li><a href="#">Contact-us</a></li>
+          <input type="text" placeholder="Search" class="search" />
+        </ul>
+      </div>
+
+      <div class="block" id="contentBlock">
+        <h2>What Is an Ecommerce Website?</h2>
+        <p>
+          An ecommerce website is any site that facilitates the buying and selling of products and services. Digital marketplaces, online retail stores, and auction sites are considered ecommerce sites because they enable consumers to buy goods.
+        </p>
+        <p>Any business owner with a product or service to sell can benefit from an ecommerce site, including the following:</p>
+        <div class="point">
+          <ul>
+            <li>A small business trying to get local customers</li>
+            <li>A freelancer selling their services</li>
+            <li>Online auction sites</li>
+          </ul>
+        </div>
+        <h2>What Is Ecommerce?</h2>
+        <p>
+          Ecommerce, which stands for “electronic commerce,” is the buying and selling of products and services over the internet. This includes all types of industries, such as retail, wholesale, and consumer goods.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

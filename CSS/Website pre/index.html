@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multicolor Website</title>
+    <style>
+      @media screen and (max-width: 1080px) {
+        .logo {
+          font-size: 30px;
+          position: relative;
+          top: 20px;
+          left: 0;
+          right: 0;
+          text-align: center;
+        }
+
+        .language-selector select {
+          font-size: 18px;
+          padding: 5px;
+          margin: 10px 0;
+          position: relative;
+          left: 0;
+          right: 0;
+          text-align: center;
+        }
+
+        .nav- {
+          flex-direction: column;
+          font-size: 18px;
+          height: auto;
+          line-height: normal;
+          padding: 10px;
+        }
+
+        .nav- ul {
+          display: flex;
+          flex-direction: column;
+          padding: 0;
+          margin: 0;
+        }
+
+        .nav1 ul {
+          display: flex;
+          flex-direction: column;
+          padding: 0;
+        }
+
+        .nav1 ul li {
+          margin: 10px 0;
+          text-align: center;
+        }
+
+        .search {
+          width: 100%;
+          max-width: 300px;
+          padding: 10px;
+          margin: 15px auto;
+        }
+
+        .block {
+          padding: 10px;
+          width: 100%;
+          max-width: 90%;
+        }
+
+        h1 {
+          font-size: 24px;
+        }
+
+        h2 {
+          font-size: 22px;
+          text-align: center;
+        }
+
+        p {
+          font-size: 16px;
+        }
+
+        .img {
+          height: auto;
+          max-width: 100%;
+        }
+
+        .Theme {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      
+    }
+      :root{
+        --color:#ff4343;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        box-sizing: border-box;
+      }
+      html{
+        max-width: 100%; /* Ensures the content stays within the screen width */
+        overflow-x: auto;
+      }
+      h1 {
+        text-align: center;
+        background: gold;
+        font-style: italic;
+        position: relative;
+        z-index: 1;
+      }
+      main{
+        height:10px ;
+        position: absolute;
+        left: 435px;
+        top: 3px;
+      }
+      
+      .logo {
+        font-size: 45px;
+        font-weight: 770px;
+        color: rgb(100, 62, 62);
+        display: inline;
+        cursor: pointer;
+        line-height: 20px;
+        font-style: bold;
+        font-family: 'Times New Roman', Times, serif;
+        position: relative;
+        top:30px;
+        right: 620px;
+
+      }
+
+      .language-selector select {
+        padding: 5px;
+        font-size: 20px;
+        border-radius: 15px;
+        background: #010000;
+        color: #f05858;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px;
+        display: inline;
+        align-items:200px;
+        text-align: center;
+        position: relative;
+        bottom: 25px;
+        left: 660px;
+        /* transition: langauge-selector  4s ease; */
+      }
+
+      .nav- {
+        background-color:var(--color);
+        color: #f591d7;
+        font-weight: 600;
+        opacity: 90%;
+        font-size: 21.5px;
+        font-family: Geneva;
+        text-align: center;
+        height: 50px;
+        font-style: italic;
+        line-height: 90px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+      }
+      .nav- ul {
+        display: contents;
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+        padding-left: 80px;
+        padding-top: 0px;
+        align-items: 30px;
+        text-indent: 18px;
+      }
+      .nav- ul li{
+        position: relative;
+        left: 220px;
+        text-indent: 28px;
+      }
+
+      .nav1 {
+        background: #0091ff;
+        color: rgb(0, 0, 0);
+        text-indent: 30px;
+        font-weight: 600;
+        opacity: 90%;
+        font-size: 21.5px;
+        font-family: Geneva;
+        text-align: center;
+        height: 100px;
+        font-style: italic;
+        line-height: 90px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+      }
+      .nav1 ul {
+        display: flex;
+        list-style-type: none;
+        /* padding: 0px; */
+        margin: 0px;
+        padding-left: 60px;
+        align-items: 20px;
+      }
+      .nav1 ul li {
+        display: inline-block;
+        padding: 2px;
+        margin-right: 50px;
+        cursor: pointer;
+      }
+      .search {
+        border: 1px solid #f4f3ea;
+        height: 30px;
+        padding: 15px;
+        border-radius: 20px 20px 20px 20px;
+        width: 130px;
+        display: block;
+        margin-left: 350px;
+        margin-top: 15px;
+        padding-right: 20px;
+        text-align: center;
+        text-shadow: 2px;
+        margin-right: 20px;
+        font-weight: 550;
+        font-size: medium;
+        font-style: Bold;
+        box-shadow: 0px 0px 8px 3px #f0d28b;
+        cursor: pointer;
+        position: relative;
+        bottom: 7.5px;
+        left: 85px;
+      }
+      .block {
+        border: 1px solid gray;
+        height: auto;
+        width: auto;
+        margin-top: 2px;
+        padding: 10px;
+        line-height: 29px;
+        padding-left: 26px;
+        transition: background-color 1.7s ease;
+      }
+      .point {
+        padding-left: 16px;
+       
+      }
+      p {
+        line-height: 30px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        position: relative;
+        left: 390px   
+      }
+      li{
+        position: relative;
+        left: 390px;
+      }
+      h2{
+        position: relative;
+        left: 300px;
+      }
+      .img{
+        position: relative;
+        left: 290px;
+        height: 500px;
+        border: 4px 4px 4px 4px solid rgb(11, 10, 10);
+        border-radius: 5% ;
+        cursor: pointer;
+      }
+
+    button{
+      background-color: #ff0000a1;
+      color: #0c0b0b;
+      position: relative;
+      font-weight: bold;
+      font-family:'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: large;
+      left: 640px;
+      bottom: 27px;
+      width: 5%;
+      height: 35px;
+      border-radius: 1000px;
+      cursor: pointer;
+      transition: background-color 1.7s ease;
+      background-color: #d4d4d4;
+      /* z-index: 1; */
+    } 
+    button::before {
+      content: '';
+      position: absolute;
+      top: -4.7px; /* Adjust positioning */
+      left: -5px; /* Adjust positioning */
+      width: 112%;
+      height: 40.5px;
+      border-radius: 1000px;
+      background-image:linear-gradient(to bottom right, rgb(25, 186, 250), rgb(244, 68, 244)); /* A translucent effect */
+      z-index: -1; /* Place it behind the button */
+      transition: transform 2s ease;
+}
+
+/* Change the appearance of the pseudo-element on hover */
+   button:hover {
+    z-index: 0;
+    box-shadow: 40px 0px 100px rgba(0, 0, 141, 0.553), -40px 0px -100px rgba(238, 130, 238, 0.553);
+    transform: scale(1.1);
+}
+    </style>
+  </head>
+  <body style="overflow: visible; padding-right: 0px; box-sizing: border-box;">
+    <div class="nav">
+      <h1>
+        <main>
+          <h3 id="main-heading">"Welcome to Our E-Commerce Store</h3>
+          <p1 id="main-paragraph" style="color: #0091ff;">Please browse our collection of amazing products.</p1>
+        </main>
+        <div class="logo">f⭕⭕d' z</div>
+        <div class="language-selector">
+        
+        <button >TC</button>
+
+          <select id="languageDropdown" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="de">Deutsch</option>
+            <option value="hi">हिन्दी</option>
+          </select>
+        </div>
+      </h1>
+      <div class="nav-">
+        <ul>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="#">Deals</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Wishlist</a></li>
+          <li><a href="#">Cart</a></li>
+          <li><a href="#">Account</a></li>
+          <li><a href="#">Contact-us</a></li>
+          <input type="text" placeholder="Search" class="search" />
+        </ul>
+      </div>
+
+      <!-- <div class="nav1">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Sign</li>
+          <li>Contact</li>
+        </ul>
+      </div> -->
+      <div class="block" id="contentBlock">
+        <h2>What Is an Ecommerce Website?</h2>
+        <p>
+          An ecommerce website is any site that facilitates the buying and
+          selling of products and services. Digital marketplaces,  
+          <p>online retail
+            stores, and auction sites are considered ecommerce sites because they enable consumers to buy goods.</p>
+         <p>Any business owner with a product or service to sell can benefit from
+          an ecommerce site, including the following:</p>
+       
+        </p>
+        <div class="point">
+          <ul>
+            <li>A small business trying to get local customers</li>
+            <li>MA freelancer selling their services A large corporation</li>
+            <li>Online auction sites</li>
+          </ul>
+          <h2>What Is Ecommerce?</h2>
+          <p>Ecommerce, which stands for “electronic commerce,” is the buying and selling of products and services over the internet. 
+          <p>This includes all types of industries, such as retail, electronics, grocery, education, entertainment, delivery, and more.</p>
+            <p>According to Statista, revenue in the U.S. ecommerce market is predicted to grow 43.58% between 2024 and 2028.</p>
+          <p>This increase in growth is forecasted to be worth $462.7 billion U.S. dollars.</p></p>
+            <span class="img">
+              <img src="states.jpeg" alt="Description of the image" width="1000" height="500">
+            </div>
+
+            <h2>How Does Ecommerce Work?</h2>
+            <p>Ecommerce works in multiple ways: Merchants can create their own ecommerce site, set up an online store 
+            <p> on an ecommerce platform like Shopify or Magento, or create a storefront on a marketplace like Amazon or eBay.</p>
+            <p>Regardless of the method, all stores must have secure payment gateways to facilitate payments</p>
+            <p>
+            and comply with Payment Card Industry (PCI) Data Security Standards.Here’s a look at the process:    
+            </p>
+
+            <ul>
+              <li>Shoppers visit our platform & browse products using a variety of devices, such as smartphones, laptops, desktops, tablets, smart TVs & watches. </li>
+              <li>Customers add the products to a virtual shopping cart. The shopping cart keeps track of selected items, quantities, and total costs. </li>
+              <li>When customers are ready to purchase, They provide shipping information, select a payment method, and review their order before finalizing the purchase.</li>
+              <li>The seller receives a notification of the order</li>
+              <li>The vendor then prepares the products for shipping to the customer</li><br>
+            </ul>
+          </p>
+            <p>
+              Shoppers search for specific products using the search bar or relevant product categories on the main menu.</p>
+            <h2>What Should an Ecommerce Site Do?</h2>
+            <p>A great ecommerce site can do a variety of things, 
+              <p>from helping you sell your products to providing an excellent user experience (UX) for customers.</p> 
+              <p>Here’s a look at what ecommerce sites should have in order to successfully meet website owners’ (and users’) needs:</p>
+
+              </p>
+              <ul>
+                <li>User-friendly interface: Ensure intuitive navigation and easy access to products and services</li>
+                <li>Secure payment gateway: Implement SSL certificates and PCI compliance for safe transactions</li>
+                <li>Product catalog: Organize products into categories with detailed descriptions and high-quality images</li>
+                <li>Shopping cart: Allow users to add, remove, and modify items before checkout</li>
+                <li>Mobile responsiveness: Optimize the site for seamless viewing and functionality across various devices</li>
+                <li>Search functionality: Enable users to quickly find specific products or categories</li>
+                <li>Customer reviews and ratings: Provide social proof and aid in decision-making for potential buyers</li>
+                <li>Order management system: Track orders, manage inventory, and process shipments efficiently</li>
+                <li>Customer support: Offer multiple channels for assistance, such as live chat, email, and phone support</li>
+                <li>Analytics and reporting: Monitor site performance, track user behavior, and gain insights for optimization</li>
+                <li>Legal compliance: Ensure adherence to data protection laws, terms of service, and privacy policies</li>
+                <li>SEO optimization: Optimize content and metadata to improve search engine rankings and visibility</li>
+                <li>Mobile optimization: Google recommends that content on mobile pages should load in under 3 seconds.</li>
+              </ul>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
