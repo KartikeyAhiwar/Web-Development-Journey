@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+         /* .blocks:first-child{
+            background-color: red;
+        } */
+         /* .block1{
+             background-color: red;
+         } */
+        .block{
+            
+            border: 2px solid black;
+            border-radius: 1000px;
+            height: auto;
+            width: auto;
+            padding: 2px;
+        }
+        .block:nth-child(2){ 
+            color: aqua;
+            background-color: seagreen;
+        }
+         .blocks > div{
+            background-color: #f3df07;
+            color: rgb(9, 121, 220);
+        } 
+         .block:last-child{
+            background-color: blue;
+        }  
+        .blocks::before {
+            content: "Starts";
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 1000px;
+            padding: 7px; 
+            font-weight: bolder;
+            margin: 2px;
+            color: rgb(8, 107, 34);
+            background-color: #11c504;
+        }
+        .blocks::after {
+            content: "Stop";
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 1000px;
+            padding: 7px;
+            font-weight: bolder;
+            align-content: center;
+            padding-right: 12px;
+            color: rgba(0, 0, 0, 0.813);
+            background-color: #ff0101;
+        }
+    </style>
+</head>
+<body>
+    <div class="blocks">
+        <div class="block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi facilis ad architecto sint, aspernatur adipisci blanditiis maiores officiis incidunt illum suscipit minus quia temporibus veniam beatae repellendus id reiciendis? Quis beatae, quidem, alias unde cum ullam quae dolor dolore illum similique dolores quasi nisi quam.</div>
+        <div class="block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ratione ut repudiandae minima assumenda exercitationem explicabo, aliquid ex quia sunt, iusto dolorem officiis maiores quas obcaecati, asperiores sequi nostrum natus saepe illo. Ullam suscipit eveniet error veritatis debitis, temporibus tenetur quibusdam dolore, aliquid molestiae harum?</div>
+        <div class="block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolorum, deleniti odio ea culpa perferendis pariatur sint laborum eligendi rerum eveniet at quaerat minima officia ipsa assumenda doloribus expedita obcaecati, necessitatibus ipsam officiis dolore quae! Laboriosam quasi non dolorem eius perferendis illo culpa doloremque totam.</div>
+        <div class="block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aperiam expedita velit neque natus! Veniam at, fugit voluptatum repudiandae voluptatibus esse perferendis. Earum, consequatur quaerat. Et nesciunt a magni odio possimus sed officiis tenetur nemo aliquid fugiat nostrum dolor quae facere quaerat beatae, recusandae eveniet!</div>
+    </div>
+    
+</body>
+</html>
