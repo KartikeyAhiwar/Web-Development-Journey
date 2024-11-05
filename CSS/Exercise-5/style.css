@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.nav{
+    border: 2px solid black;
+    background: #faa003;   
+    text-align: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    padding-bottom:75px ;
+    width: 100%;
+    
+}
+.nav li{
+    display: inline-block;
+    padding: 5px;
+    align-content: center;
+    margin: 5px;
+    border: 2px solid black;
+    position: relative;
+    right: 100px;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    text-shadow: 2px;
+    font-weight: 550;
+    font-size: large;
+    font-style: Bold;
+    box-shadow: 0px 0px 8px 3px #f0d28b;
+    cursor: pointer;
+    position: relative;
+    top: 37px;
+    transition: background-color 0.5s ease;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.nav li:hover{
+    background-color: #fe8103;
+    
+}
+.box{
+    border: 2px solid black;
+    margin-top: 1px;
+    background: #ffe89d;   
+    text-align: center;
+    height: 670px;
+    width: 100%;
+}
+
+.box li{
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid black;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-shadow: 2px;
+    font-weight: 550;
+    font-size: large;
+    font-style: Bold;
+    box-shadow: 0px 0px 8px 3px #f0d28b;
+    cursor: pointer;
+    position: relative;
+    top: 37px;
+    transition: background-color 0.5s ease;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 600px;
+    width: 600px;
+}
+.box1{
+    border: 2px solid black;
+    border-radius: 90px;
+    margin: 15px;
+    background: #e9b406;   
+    position: relative;
+    left: 110px;
+    text-align: center;
+    align-content: center;
+    text-shadow: 2px 2px 2px #7ab6f3;
+    font-weight: 550;
+    font-size: large;
+    font-style: Bold;
+    top: 5px;
+    box-shadow: 0px 0px 8px 3px #f0d28b;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    height: 200px;
+    width: 1287.5px;
+}
+.Hang{
+    border: 2px solid black;
+    border-radius: 1000px;
+    background: #a4d7e7;   
+    height: 80px;
+    width: 80px;
+    position: fixed;
+    bottom: 250px; 
+    right: 30px;  
+    align-content: center;
+    text-align: center;
+    text-shadow: 0px 3px 3px  #687974;
+    font-weight: 550;
+    font-size: large;
+    font-style: Bold;
+    box-shadow: 0px 2px 8px 5px #fdfcfb;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    
+}
+.footer{
+    border: 2px solid black;  
+    border-top: 0px;
+    background: #8c8263;   
+    height: 320px;
+    width: 1536px;
+   
+
+
+}
