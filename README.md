@@ -1,6 +1,6 @@
 # 🌐 Web Development Journey 
 
-Welcome to my **Web Development Journey**! This repository is where I document my progress as I learn and practice web development through the **Sigma Web Dev** playlist by **CodeWithHarry**. I’ll be updating this file as I master new topics and build projects, adding reflections, code snippets, and resources.
+Welcome to my **Web Development Journey**! This repository is where I document my progress as I learn and practice web development through the **Sigma Web Dev**. I’ll be updating this file as I master new topics and build projects, adding reflections, code snippets, and resources.
 
 Feel free to follow along, provide feedback, or even contribute if you'd like! 🚀
 
@@ -25,7 +25,7 @@ Feel free to follow along, provide feedback, or even contribute if you'd like! �
 
 ## 🔍 About the Sigma Web Dev Series
 
-**Sigma Web Dev** is a comprehensive playlist by **CodeWithHarry**, designed to take beginners from zero to proficient in web development. This series covers everything from HTML and CSS fundamentals to advanced JavaScript, backend basics, and building full-stack applications. I’m excited to be on this journey and to build an impressive portfolio along the way!
+**Sigma Web Dev** is a comprehensive Course designed to take beginners from zero to proficient in web development. This series covers everything from HTML and CSS fundamentals to advanced JavaScript, backend basics, and building full-stack applications. I’m excited to be on this journey and to build an impressive portfolio along the way!
 
 ---
 
