@@ -6,7 +6,7 @@ Feel free to follow along, provide feedback, or even contribute if you'd like! �
 
 ---
 
-## 🖖️ Table of Contents
+## 📖 Table of Contents
 1. [Introduction](#introduction)
 2. [About the Sigma Web Dev Series](#about-the-sigma-web-dev-series)
 3. [Progress Overview](#progress-overview)
@@ -99,6 +99,30 @@ h1 {
     text-align: center;
 }
 ```
+
+### 3. JavaScript Essentials
+> **Status:** Not Started  
+> **Key Concepts:** Variables, data types, functions, loops, and DOM manipulation  
+> **Next Steps:** Build small scripts to manipulate HTML elements dynamically.
+
+```javascript
+// Sample JavaScript: Change text content dynamically
+const heading = document.querySelector('h1');
+heading.textContent = 'Welcome to the JavaScript Section!';
+
+// Adding an event listener
+const button = document.createElement('button');
+button.textContent = 'Click Me';
+document.body.appendChild(button);
+button.addEventListener('click', () => {
+    alert('Button Clicked!');
+});
+```
+
+### 4. Advanced JavaScript
+> **Status:** Not Started  
+> **Key Concepts:** Promises, async/await, closures, ES6 modules  
+> **Next Steps:** Solve advanced problems and practice asynchronous programming.
 
 ---
 
