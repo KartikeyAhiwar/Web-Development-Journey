@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORMS</title>
+  </head>
+  <style>
+    /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: white;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    list-style: none;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+header li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+header li:hover {
+    color: #00aaff;
+}
+
+/* Form Styling */
+form {
+    background: white;
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: left;
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1em;
+    border: none;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #0056b3;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+}
+  </style>
+  <body>
+    <header>
+      <li><a href="Home"></a>Home</li>
+      <li><a href="About"></a>About</li>
+      <li><a href="Add Column"></a>ADD Column</li>
+      <li><a href="Add Row"></a>ADD ROW</li>
+    </header>
+    <main>
+      <h1>Jee Main Examination</h1>
+      <form action="/submit.php">
+        <div>
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="name" />
+        </div>
+        <div>
+          <label for="Age">Age</label>
+          <input id="Age" type="number" placeholder="Age" />
+        </div>
+        <label for="Gender">Gender</label>
+        <select name="Gender" id="Gender" required>
+            <option value="Disable- selected">Disable-Select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+        <div>
+          <label for="Phone">Phone</label>
+          <input id="Age" type="tel" placeholder="Phone" />
+        </div>
+        <div>
+          <div>
+            Address:
+            <label for="Address"></label>
+            <textarea name="Address" id="Address"></textarea>
+          </div>
+        </div>
+        <div>
+          <label for="email">Email ID</label>
+          <input id="email" type="email" placeholder="email" />
+        </div>
+        <div>
+          <label for="DOB">Date of Birth</label>
+          <input id="DOB" type="date" placeholder="DOB" />
+        </div>
+        <div>
+        </div>
+        <div>
+          <label for="submit">
+            <input type="Submit" />
+          </label>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

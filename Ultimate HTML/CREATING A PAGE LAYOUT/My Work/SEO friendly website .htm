@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game - Website</title>
+</head>
+<style>
+    /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0c0c0c;
+    color: white;
+    text-align: center;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: linear-gradient(45deg, #1e1e1e, #292929);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+header div {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #00aaff;
+}
+
+nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #00aaff;
+    text-shadow: 0 0 5px #00aaff;
+}
+
+/* Main Section */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+section div {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    padding: 10px;
+    font-size: 0.9em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav li {
+        margin: 10px 0;
+    }
+    main {
+        height: auto;
+        padding: 50px 0;
+    }
+}
+
+</style>
+<body>
+    <header>
+        <div>PlayStation</div>
+        <nav>
+            <li><a href="index.html">Search bar</Search></a></li>
+            <li><a href="index.html">Friend</a></li>
+            <li><a href="index.html">My Game</a></li>
+            <li><a href="index.html">Login</a></li>
+            <li><a href="index.html">Home</a></li>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div>Play Unlimited Game - here is your game Adda! </div>
+        </section>
+    </main>
+    <footer>
+        @Copyright 2025
+    </footer>
+</body>
+</html>
