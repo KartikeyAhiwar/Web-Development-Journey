@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boobkmark.Web</title>
+</head>
+<style>
+   /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #121212;
+    color: white;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: #1f1f1f;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #00aaff;
+    text-shadow: 0 0 5px #00aaff;
+}
+
+/* Main Content */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card a {
+    text-decoration: none;
+    color: #00aaff;
+    font-size: 1.2em;
+    transition: all 0.3s;
+    display: block;
+    margin-top: 10px;
+}
+
+.card a:hover {
+    color: white;
+    background: #00aaff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    padding: 10px;
+    font-size: 0.9em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 90%;
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav li {
+        margin: 10px 0;
+    }
+}
+
+
+</style>
+<body>
+    <div>TechCards</div>
+    <header><nav>
+       <li><a href="hom">Home</a></li>
+       <li><a href="Abot">About</a></li>
+       <li><a href="Doubt">Doubt</a></li>
+       <li><a href="Book-mark">Book-mark</a></li>
+       <li><search></search></li>
+       <li><login></login></li>
+    </nav></header>
+    <main>
+        <section>
+            <div class="card">
+            <li><a href="https://github.com/" target="_blank">Github</a></li>
+            <li><a href="https://stackoverflow.com/" target="_blank">stackoverflow</a></li>
+            <li><a href="https://developer.mozilla.org/" target="_blank">Web Developer document</a></li>
+            <li><a href="https://www.w3schools.com/" target="_blank">W3schools</a></li>
+            <li><a href="https://devdocs.io/" target="_blank">Devdocs</a></li>
+            </div>
+        </section>
+    </main>
+    <footer>
+        @copyright All 
+    </footer>
+</body>
+</html>

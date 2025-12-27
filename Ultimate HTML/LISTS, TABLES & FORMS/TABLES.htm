@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+  </head>
+  <style>/* General Styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f4f4f4;
+        text-align: center;
+    }
+    
+    /* Header */
+    header {
+        background: #333;
+        color: white;
+        padding: 15px 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        list-style: none;
+    }
+    
+    header li {
+        display: inline;
+        list-style: none;
+        font-size: 1.2em;
+        cursor: pointer;
+    }
+    
+    header li a {
+        text-decoration: none;
+        color: white;
+        transition: color 0.3s;
+    }
+    
+    header li:hover {
+        color: #00aaff;
+    }
+    
+    /* Table */
+    table {
+        width: 50%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        background: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin: 10px 0;
+        color: #333;
+    }
+    
+    thead {
+        background: #007bff;
+        color: white;
+    }
+    
+    th, td {
+        padding: 15px;
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+    }
+    
+    tr:hover {
+        background: #f1f1f1;
+        transition: background 0.3s;
+    }
+    
+    /* Footer */
+    footer {
+        background: #222;
+        color: white;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        font-size: 0.9em;
+    }</style>
+  <body>
+    <header>
+        <li><a href="Home"></a>Home</li>
+        <li><a href="Home"></a>New Table</li>
+        <li>change Theme</li>
+        <li><Search>Search</Search></li>
+        <li><a href="Login"></a>Login</li>
+    </header>
+    <main>
+      <table>
+        <caption>
+          Students Report
+        </caption>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Grade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Kartikey</td>
+            <td>A+</td>
+          </tr>
+          <tr>
+            <td>Rahul</td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>Vimal</td>
+            <td>E</td>
+          </tr>
+          <tr>
+            <td>Rohit</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>Harshit</td>
+            <td>D+</td>
+          </tr>
+          <tr>
+            <td>Priyanka</td>
+            <td>B+</td>
+          </tr>
+          <tr>
+            <td>Priya</td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>Hasmukh Lal</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td colspan="2">Total</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer>@copyright</footer>
+  </body>
+</html>

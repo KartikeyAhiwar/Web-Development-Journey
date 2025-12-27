@@ -1,0 +1,710 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url(bg.jpg);
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 644px;
+    position: relative;
+}
+.main .box {
+    height: 644px;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+nav{
+    max-width: 60vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+nav span{
+    color: red;
+    width: 150px;
+    top: -3px;
+    left: -160px;
+    position: relative;
+    z-index: 1;
+}
+nav button{
+    position: relative;
+    z-index: 2;
+    right: -160px;
+    top: -6px;
+
+}
+
+.hero{
+    max-width: 60vw;
+    margin: auto;
+    color: white;
+    position: relative;
+    z-index: 10;
+    text-indent: 45px;
+    text-align: center;
+    top: 100px;
+}
+nav button{
+    margin: 0 3px;
+}
+
+.but1{
+    padding: 5px 10px;
+    border-radius: 2px;
+    border: 1px solid rgba(166, 165, 165, 0.683);
+    background-color: rgba(6, 6, 6, 0.098);
+    color: rgba(255, 255, 255, 0.963);
+    height: 35px;
+    z-index: 2;
+    font-family:'Arial', sans-serif;
+    font-size:medium;
+    position: relative;
+    width: 120px;
+    
+}
+
+.but2{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(47, 45, 45);
+    background-color: red;
+    color: white;
+    font-weight:700;
+    height: 39px;
+    z-index: 2;
+    width: 80px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+.but2:hover {
+    background-color: darkred; /* Darker shade of red for hover effect */
+}
+.hero-input{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    margin-right: 5px;
+}
+.hero span{
+    font-size: 50px;
+    font-weight: 1000;
+    position: relative;
+    top: 25px;
+    
+}
+.hero p{
+    font-size: 14px;
+    position: relative;
+    top: 35px;
+}
+
+.hero-input input{
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: px solid rgba(109, 106, 106, 0.603);
+    background-color: rgba(54, 51, 51, 0.927);
+    color: rgba(255, 255, 255, 0.847);
+    font-weight:100;
+    font-size: 15px;
+    position: relative;
+    top: 25px;
+    right: 5px;
+    width: 350px;
+    height: 35px;
+    z-index: 2;
+
+}
+.hero-input button{
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(109, 106, 106, 0.603);
+    background-color: rgb(223, 3, 3);
+    color: white;
+    font-weight:700;
+    font-size: medium;
+    position: relative;
+    top: 25px;
+    left: 5px;
+    width: 250px;
+    cursor: pointer; 
+    Transition: background-color 0.3s ease; /* Smooth transition for hover effect */    
+}
+.Submit:hover {
+    background-color: darkred; /* Darker shade of red for hover effect */
+}
+a{
+    position: relative;
+    left: 272px;
+    top: -50px;
+    font-weight: 100;
+    font-size: 35px;
+}
+.line {
+    height: 5px;
+    width: 100%; /* Adjust based on your layout */
+    background-color: rgba(175, 164, 164, 0.445);
+    position: relative;
+    z-index: 20;
+    top: 198px;
+    border-radius: 50px; /* Adds the curve */
+    box-shadow: 0 0 15px 5px rgba(255, 111, 111, 0.491); /* Spreading effect */
+}
+
+.Trending{
+    color: white;
+    position: relative;
+    font-size: 33px;
+    font-weight: 1000;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    font-family:'Cambria';
+}
+.Trending button{
+    position: relative;
+    z-index: 10;
+    top: 20px;
+    width: 100px;
+    height: 50px;
+    font-size: medium;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid rgba(109, 106, 106, 0.603);
+    margin: 0 3px;
+    color: white;
+    background-color: #00000048;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+.Trending button:hover {
+    background-color: darkred; /* Darker shade of red for hover effect */
+    transform: scale(1.1); /* Increase size by 10% when hovered */
+    z-index: 20; /* Bring the hovered card to the front */
+    
+}
+.cards{
+    display:flex; /* Arrange cards in a horizontal row */
+    gap: 10px; /* Add consistent spacing between cards */
+    position: relative;
+    top: 25px;
+}
+.cards .card1{
+    position: relative;
+    background-image: url("AAAABb1xAAayA5ypvPW2dUowV1mbe6eLbdgb89aim4JDvN5NgfcOyrrTpIFC0Xpw4eQc8SH9Wq7TPMn6VImSOsXZIMNyTY5ReFeSyT1L9Dg5zVpJw7sFxqKvwUf2coPg3oRKI8-4STKqY_VioZq96m3V8czut_z7SFGI84BewFwjU8wduDB32jF_NH_vkqOxO0tUacS-ndJ3JBnQCMFjqij0G9HRO-9u2UF5cp2NzIm81nnYdxMmBMuj0_.jpg");
+    border: 2px solid blanchedalmond;
+    z-index: 10;
+    background-repeat: no-repeat;
+    left: 20px;
+    top: 25px;
+    width: 200px;
+    height: 290px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+.cards span{
+    z-index: 10;
+    color: rgb(0, 0, 0);
+    font-size: 80px;
+    position: relative;
+    top: 150px;
+    left: -70px;
+    text-shadow:  2px 2px 0 rgb(237, 226, 226),
+    -2px 2px 0 black,
+    2px -2px 0 rgb(132, 129, 129),
+    -2px -2px 0 black,
+    2px 0 0 black,
+    -2px 0 0 black,
+    0 2px 0 black,
+    0 -2px 0 black;;
+}
+
+.cards .card1:hover {
+    transform: scale(1.1); /* Increase size by 10% when hovered */
+    z-index: 20; /* Bring the hovered card to the front */
+}
+.cards .card2{
+    position: relative;
+    background-image: url("AAAABdQH6RlnI-gnQ1LMGsNg94_LfJnpDacEQt4AdG5QYLpa3RuaXYl-h2Y2fE7E4xuDy0XzO9Ds2xo6Yp_si_RmTu1QwxFEl7FvPMHomikgA4R_GsH3J1YjFlYSECmEFvQLjHuGES69gFREm8fFQUf1bUFIMH6UdBJELOgXHvnOC9nIKE59xbEqXNd7nF1FeGWXERuCOb2qmQG5gH92W-CFfloEMqbs8uDVl4j5x3sIrTft_UPJjgul-A.jpg");
+    border: 2px solid blanchedalmond;
+    z-index: 10;
+    background-repeat: no-repeat;
+    top: 25px;
+    left: 20px;
+    width: 200px;
+    height: 290px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+.cards .card2:hover {
+    transform: scale(1.1); /* Increase size by 10% when hovered */
+    z-index: 20; /* Bring the hovered card to the front */
+}
+.cards .card3{
+    position: relative;
+    background-image: url("AAAABe3GOW-TT30Fq9Y-XtokG_bSWC5v4yop636DmhmhPRwpHwJ9GFKxaBuh29g3FbtI4_7scStCHTN67z9SV0DZxU-Qg34zHZETLek79cdalf9PWc227pWuQwRF_anHwhcO_GAuWbTovCUp-dQXJKAuG1yseihE1Kf1Aelx8Jg3jfM0H8sxTnwTYfYFESRjhsQVOjc5QHqUuNVT5koCQTMH5bik3bXsTxDod5YaW1u6--825nS3dxYbWS.jpg");
+    border: 2px solid blanchedalmond;
+    z-index: 10;
+    background-repeat: no-repeat;
+    top: 25px;
+    left: 20px;
+    width: 200px;
+    height: 290px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+.cards .card3:hover {
+    transform: scale(1.1); /* Increase size by 10% when hovered */
+    z-index: 20; /* Bring the hovered card to the front */
+}
+.cards .card4{
+    position: relative;
+    background-image: url("AAAABfOrKBhRRsczhcCHPvS5hJkNDPX_Lu-QTKCbUja2_qvc1mNT1EGTj3130Ova3325_-BkRwPDKKI3mG6b4fSwd49ANswBhDHEAUtO7faVKoGPOnTIUfAGShPuxItb8IRXVTpg1f87jr3cPcFxm_FEsBb517RKp9d9osakuSamAFgv-GI9vPqUkWHBIjZOiKuV2nFB02P51f-u8OF6O24T6MZisKnMT0JuO0j1j9DzuAH9DAo7bFry1t.jpg");
+    border: 2px solid blanchedalmond;
+    z-index: 10;
+    background-repeat: no-repeat;
+    top: 25px;
+    left: 20px;
+    width: 200px;
+    height: 290px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+.cards .card4:hover {
+    transform: scale(1.1); /* Increase size by 10% when hovered */
+    z-index: 20; /* Bring the hovered card to the front */
+}
+.cards .card5{
+    position: relative;
+    background-image: url("AAAABQ1s1Q24JaMz1DrlQWdGlBMeRKS_RFN8uUi_AJ2urdrKYnCn5GOcezNudnrh8LYAUpqPEMCmOQzCnLm1GaozbrSALMHwETf3ueXNniV3QWm-zHsgES3Hd__M3Zau8RVKjThLIOr2lQirCQnMYoRgATkWgEszFAFejOeXwLNE5PVoEBboLnSPJRE-ZrPJpOH0pYx7tD7XrQiBlfQZ5OV92QDltnli6_Bt78g61uK6l67CPgg2eNiSWN.jpg");
+    border: 2px solid blanchedalmond;
+    z-index: 10;
+    background-repeat: no-repeat;
+    top: 25px;
+    left: 20px;
+    width: 200px;
+    height: 290px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+.cards .card5:hover {
+    transform: scale(1.1); /* Increase size by 10% when hovered */
+    z-index: 20; /* Bring the hovered card to the front */
+}
+.cards .card6{
+    position: relative;
+    background-image: url("AAAABVVHToTfBvQeWjFENcNINF_gK8ZJQyF4NskPUhFif7RetTs49yo6sNYWozvSzFGbbLmraFdPh_g35ZXzfnkgeTh1sAiyF9_Xpwx6QhTZqBTYEK_bvh8CyhUlUhmx7rJP--qKiNxdyXnrclSgsxpVdkfZlmo50_LGAQtXJSRgdbv2vdQUm0qJtKMsA73BRwtGVWjKuB3BdJxa3iJD2V3Fh-pIJqgcGiT1Msrg81Vs2lRi1ZX48Ds8Ef.jpg");
+    border: 2px solid blanchedalmond;
+    z-index: 10;
+    top: 25px;
+    left: 20px;
+    width: 200px;
+    height: 290px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    background-repeat: no-repeat;
+}
+.cards .card6:hover {
+    transform: scale(1.1); /* Increase size by 10% when hovered */
+    z-index: 20; /* Bring the hovered card to the front */
+}
+.cards .card7{
+    position: relative;
+    background-image: url("AAAABXGV4zDEp09SNLq2Hw-b7zRg6JJ3SdhPLDPu-fjk8-G-Yskt90MupRS12eE69IdWFzj8PFcmHOr1FMmBDKXhDUz0BhIdA_-mf6Z0KXY24AYgkGFPfGxpBDnC88Yxk2IlxOTqh2RmcBqgrDVscSxfpxYBrBgGfQLiKrs.jpg");
+    border: 2px solid blanchedalmond;
+    z-index: 10;
+    background-repeat: no-repeat;
+    top: 25px;
+    left: 20px;
+    width: 200px;
+    height: 290px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+.cards .card7:hover {
+    transform: scale(1.1); /* Increase size by 10% when hovered */
+    z-index: 20; /* Bring the hovered card to the front */
+}
+.Reason{
+    position: relative;
+    top: 70px;
+    font-weight: 1000;
+    font-size: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.Reasons{
+    position:relative;
+    top: 90px;
+    left: 150px;
+    display: flex;
+    gap: 20px;
+}
+.Reasons h4{
+    position: relative;
+    top: 20px;
+    left: -8px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+} 
+.Reasons p{
+    position: relative;
+    top: 50px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    text-align: start;
+    color: rgba(190, 218, 241, 0.639);
+}
+.Reasons .Reason1{
+    position: relative;
+    /* border:2px solid rgb(243, 243, 243) ; */
+    width:320px;
+    height: 270px;
+    width: 305px;
+    height: 260px;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: x-large;
+    background: linear-gradient(45deg,rgba(11, 2, 129, 0.411), rgba(137, 3, 137, 0.324));
+}
+.Reason1 span{
+    position: relative;
+    top: 100px;
+    left: 80px;
+}
+.Reasons .Reason2{
+    position: relative;
+    /* border:2px solid white; */
+    width:320px;
+    height: 270px;
+    width: 305px;
+    height: 260px;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: x-large;
+    background: linear-gradient(45deg,rgba(11, 2, 129, 0.411), rgba(137, 3, 137, 0.324));
+}
+.Reason2 span{
+    position: relative;
+    top: 120px;
+    left: 90px;
+}
+.Reasons .Reason3{
+    position: relative;
+    /* border: 2px solid white ; */
+    width:320px;
+    height: 260px;
+    width: 305px;
+    height: 260px;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: x-large;
+    background: linear-gradient(45deg,rgba(11, 2, 129, 0.411), rgba(137, 3, 137, 0.324));
+}
+.Reason3 span{
+    position: relative;
+    top: 120px;
+    left: 90px;
+}
+.Reasons .Reason4{
+    position: relative;
+    /* border:2px solid white ; */
+    width:320px;
+    height: 270px;
+    width: 305px;
+    height: 260px;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: x-large;
+    background: linear-gradient(45deg,rgba(11, 2, 129, 0.411), rgba(137, 3, 137, 0.324));
+}
+.Reason4 span{
+    position: relative;
+    top: 100px;
+    left: 90px;
+}
+
+.Questions {
+    position: relative;
+    top: 120px;
+    left: -425px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 27px;
+}
+.Q{
+    position: relative;
+    top: 120px;
+    left: 7px;
+    display: inline;
+    column-gap: 100px;
+    font-size: 25px;
+}
+.Q .Q1{
+   position: relative;
+   left: 140px;
+   top: 10px;
+   height:80px ;
+   width:1280px;
+   border: 2px solid black ;
+   background-color: #756b6b7a;
+   border-radius: 2px;
+
+}
+.Q .Q2{
+   height:80px ;
+   width:1280px;
+   left: 140px;
+   top: 10px;
+   border: 2px solid black ;
+   background-color: #756b6b7a;
+   border-radius: 2px;
+   position: relative;
+
+}
+.Q .Q3{
+   height:80px ;
+   width:1280px;
+   left: 140px;
+   top: 10px;
+   border: 2px solid black ;
+   background-color: #756b6b7a;
+   border-radius: 2px;
+   position: relative;
+
+}
+.Q .Q4{
+   height:80px ;
+   width:1280px;
+   left: 140px;
+   top: 10px;
+   border: 2px solid black ;
+   background-color: #756b6b7a;
+   border-radius: 2px;
+   position: relative;
+
+}
+.Q .Q5{
+   position: relative;
+   height:80px ;
+   width:1280px;
+   left: 140px;
+   top: 10px;
+   border: 2px solid black ;
+   background-color: #756b6b7a;
+   border-radius: 2px;
+
+}
+.Q .Q6{
+   position: relative;
+   height:80px ;
+   width:1280px;
+   left: 140px;
+   top: 10px;
+   border: 2px solid black ;
+   background-color: #756b6b7a;
+   border-radius: 2px;
+
+}
+.Q span{
+    position: relative;
+    left:600px;
+    top: -25px;
+    font-size: 45px;
+    font-weight:50;
+}
+.Q p{
+    position: relative;
+    text-align: start;
+    align-items: center;
+    top: 20px;
+    left: 10px;
+    font-weight: 200
+}
+.para{
+    position: relative;
+    top:190px;
+    font-weight: 100;
+    font-size: 15px;
+}
+.Enters{
+    position: relative;
+    top: 210px;
+}
+.Enters .email{
+    position: relative;
+    left: 10px;
+    top: -1px;
+    height: 60px;
+    width: 500px;
+    border-radius: 5px;
+    border: 2px solid rgb(47, 45, 45);
+    background-color: #756b6b1b;
+    color: white;
+    font-weight:100;
+    font-size: 17px;
+    z-index: 2;
+}
+.Enters .email::placeholder{
+    position: relative;
+    left: 70px;
+    top: 2px;
+    font-size: 14px;
+    font-weight: 100;
+}
+.Enters .Smit p{
+    position: relative; 
+    left: -1px;
+    top: 2px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.Enters .Smit{
+    position: relative;
+    left: 10px;
+    top: -1px;
+    height: 60px;
+    width: 300px;
+    border-radius: 5px;
+    border: 2px solid rgb(47, 45, 45);
+    background-color: red;
+    color: white;
+    font-weight:100;
+    font-size: 15px;
+    z-index: 2;
+    cursor: pointer;
+}
+.arrow{
+    position: relative;
+    top: 148px;
+    left: 347px;
+    font-size: 40px;
+    font-weight: 10;
+    z-index: 10;
+}
+
+.footer{
+    position: relative;
+    top: 250px;
+    cursor: pointer;
+    color: rgba(255,255,255,0.7);
+}
+.footer p{
+    position: relative;
+    left: 90px;
+    cursor:pointer;
+    top: 10px;
+    font-size: 15px;
+    font-style: normal;
+    text-decoration: underline color(rgba(255,255,255,0.7));
+
+    font-weight: 100;
+    text-align: start;
+}
+.footer a{
+    position: relative;
+    left: 90px;
+    cursor:auto;
+    top: 10px;
+    left: -565px;
+    font-size: 15px;
+    font-style: normal;
+    text-decoration: underline;
+    font-weight: 100;
+    text-align: start;
+}
+.footer a span{
+    cursor: pointer;
+}
+.f2{
+    position: relative;
+    top: 10px;
+    font-size: 15px;
+    font-weight: 100;
+    text-align: start;
+    text-decoration: underline;
+}
+    
+.f3{
+    position: relative;
+    left: 390px;
+    top: -85px;
+    font-size: 15px;
+    font-weight: 100;
+    text-align: start;
+    text-decoration: underline;
+}
+.f4{
+    position: relative;
+    left: 770px;
+    top: -178px;
+    font-size: 15px;
+    font-weight: 100;
+    text-align: start;
+    text-decoration: underline;
+}
+.f5{
+    position: relative;
+    left: 1200px;
+    top: -270px;
+    font-size: 15px;
+    font-weight: 100;
+    text-align: start;
+    text-decoration: underline;
+}
+
+.langi{
+    position: relative;
+    top: 50px;
+    left: -620px;
+    font-size: 15px;
+    font-weight: 100; 
+}
+.langi .Bot{
+    padding: 5px 10px;
+    border-radius: 2px;
+    border: 1px solid rgba(166, 165, 165, 0.683);
+    background-color: rgba(6, 6, 6, 0.098);
+    color: rgb(255, 255, 255);
+    height: 35px;
+    z-index: 2;
+    font-family: 'Arial', sans-serif;
+    font-size: medium;
+    position: relative;
+    width: 120px;
+}
+
+.Brand{
+    position: relative;
+    top: 100px;
+    left: -635px;
+    font-size: 15px;
+    font-weight: 100; 
+    cursor: pointer;
+    color: #e8dedecb;
+}
